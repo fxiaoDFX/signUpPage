@@ -8,6 +8,8 @@ body {
     justify-content: center;
     margin: 0;
     padding: 0;
+    background-color: #1f1f1faf;
+    font-family: Verdana, sans-serif;
 }
 
 /* style for image container */
@@ -38,12 +40,62 @@ body {
 
 /* style for main container */
 .main-container {
-    max-width: 500px;
-    border: 2px solid black;
-    padding: 24px;
+    display: grid;
+    width: 500px;
+    background-color: #f6f6f6;
     font-family: sans-serif;
+    grid-template-rows: 1fr 30% 1fr  ;
 }
 
-    div > .header, .footer{
-        height: 66vh;;
+.header, .input-container, .footer {
+    padding: 24px;
+
+}
+
+    /* header */
+    .header {
+        font-size: 1.1rem;
+        padding-top: 75px;
+    }
+
+    .header-last-text {
+        margin: 24px 0px 30px;
+    }
+
+    /* input-container */
+    .input-container {
+        background-color: white;
+        box-shadow: 0 4px 4px -5px;
+    }
+
+    .input-fields {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 24px 0px;
+        font-size: .65rem;
+        font-weight: bold;
+        color: #00000088;
+    }
+
+    .row {
+    }
+
+    .input-fields input {
+        margin: 0px 20px 16px 0px;
+    }
+
+    /* footer */
+    .footer button {
+        margin-bottom: 20px;
+        padding: 4px 20px;
+        background-color: #596D48;
+        color: #e3e3e3;
+        border-radius: 8px;
+        border: 2px solid #596D48;
+        font-weight: bold;
+    }
+
+    .footer a {
+        color: #596D48cc;
+        font-weight: bold;
     }
