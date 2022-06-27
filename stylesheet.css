@@ -1,0 +1,49 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* style for image container */
+/* add background image for image banner */
+.image-container {
+    background-image: url(./images/halie-leaves-background.jpg);
+    background-size: cover;
+    min-width: 340px;
+    min-height: 100vh;
+}
+
+    /* add slight transparent black background for logo */
+    .odin-logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        font-family: norse-bold, serif;
+        font-size: 4em;
+        background-color: rgba(0, 0, 0, 50%);
+        margin-top: 140px;
+        padding: 8px;
+    }   
+
+    .logo-image {
+        max-width: 60px;
+    }
+
+/* style for main container */
+.main-container {
+    max-width: 500px;
+    border: 2px solid black;
+    padding: 24px;
+    font-family: sans-serif;
+}
+
+    div > .header, .footer{
+        height: 66vh;;
+    }
