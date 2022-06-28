@@ -17,8 +17,8 @@ body {
 .image-container {
     background-image: url(./images/halie-leaves-background.jpg);
     background-size: cover;
-    min-width: 340px;
-    min-height: 100vh;
+    width: 340px;
+    height: 100vh;
 }
 
     /* add slight transparent black background for logo */
@@ -42,46 +42,63 @@ body {
 .main-container {
     display: grid;
     width: 500px;
+    height: 100vh;
     background-color: #f6f6f6;
     font-family: sans-serif;
-    grid-template-rows: 1fr 30% 1fr  ;
+    grid-template-rows: 33% 30% 35%;
 }
 
-.header, .input-container, .footer {
-    padding: 24px;
-
+.header, .footer {
+    padding: 0px 24px 0px 24px;
+    font-size: 14px;
 }
 
     /* header */
     .header {
-        font-size: 1.1rem;
-        padding-top: 75px;
+        padding-top: 80px;
     }
 
     .header-last-text {
-        margin: 24px 0px 30px;
+        margin: 24px 0px 0px;
     }
 
     /* input-container */
     .input-container {
         background-color: white;
         box-shadow: 0 4px 4px -5px;
+        height: 185px;
+        padding: 18px;
     }
 
     .input-fields {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 24px 0px;
+        margin-top: 12px;
+        margin-bottom: 20px;
         font-size: .65rem;
         font-weight: bold;
+    }
+
+    label {
         color: #00000088;
+    }
+
+    input:focus {
+        background-color: lightblue;
     }
 
     .input-fields input {
         margin: 0px 20px 16px 0px;
     }
 
+    input#user-password-2 {
+        margin-bottom: 2px;
+    }
     /* footer */
+    .footer{
+        padding-top: 18px;
+    }
+
     .footer button {
         margin-bottom: 20px;
         padding: 4px 20px;
@@ -92,7 +109,29 @@ body {
         font-weight: bold;
     }
 
+    button:active {
+        transform: scale(0.98);
+        /* Scaling button to 0.98 to its original size */
+        box-shadow: 3px 2px 22px 1px);
+        /* Lowering the shadow */
+    }
+
     .footer a {
         color: #596D48cc;
         font-weight: bold;
+    }
+
+    .footer a:active {
+        color: black;
+    }
+
+    #reset {
+        border: none;
+        background-color: white;
+        color: rgb(0, 0, 255);
+        margin-left: 290px;
+    }
+
+    #reset:active{
+        color: rgb(255, 0, 0);
     }
