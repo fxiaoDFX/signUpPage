@@ -112,7 +112,7 @@ body {
     button:active {
         transform: scale(0.98);
         /* Scaling button to 0.98 to its original size */
-        box-shadow: 3px 2px 22px 1px);
+        box-shadow: 3px 2px 22px 1px;
         /* Lowering the shadow */
     }
 
@@ -125,13 +125,13 @@ body {
         color: black;
     }
 
-    #reset {
-        border: none;
-        background-color: white;
-        color: rgb(0, 0, 255);
-        margin-left: 290px;
-    }
+#reset {
+    border: none;
+    background-color: white;
+    color: rgb(0, 0, 255);
+    margin-left: 290px;
+}
 
-    #reset:active{
-        color: rgb(255, 0, 0);
-    }
+#reset:active {
+    color: rgb(255, 0, 0);
+}
